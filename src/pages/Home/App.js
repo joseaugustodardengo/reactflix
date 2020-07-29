@@ -1,10 +1,10 @@
 import React from 'react';
-import Menu from './components/Menu';
-import Footer from './components/Footer';
-import BannerMain from './components/BannerMain';
-import Carousel from './components/Carousel';
+import Menu from '../../components/Menu';
+import Footer from '../../components/Footer';
+import BannerMain from '../../components/BannerMain';
+import Carousel from '../../components/Carousel';
 
-import Data from './data/dados_iniciais.json';
+import Data from '../../data/dados_iniciais.json';
 
 function App() {
 
@@ -16,8 +16,6 @@ function App() {
     link_extra: category.link_extra,
     videos: category.videos
   }))
-
-  console.log(categorias);
 
   const url = categorias[0].videos[0].url;
   const videoTitle = categorias[0].videos[0].titulo;
